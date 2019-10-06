@@ -1,0 +1,12 @@
+---
+layout: default
+---
+  <div class="section-recipes-big-squares">
+    {% for card in site.categories["recipe"] %}
+      {% include card-recipe.html %}
+    {% endfor %}
+  </div>
+  <div class="instagram-feed-container">
+    <div class="instagram-feed-title"> <a href="{{ "https://www.instagram.com/" | append: site.instagram_username }}" target="_blank">latest on instagram</a></div>
+    <div id="instafeed" class="instagram-feed"></div>
+  </div>

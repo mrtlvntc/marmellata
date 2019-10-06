@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article class="post-content">
+  <div class="post-container">
+    <div class="post-text">
+      <div class="post-title">{{ page.title }}</div>
+      <img class="mobile-top-image" src="{{ site.recipesimages | append: page.cover_image | absolute_url | escape }}"/>
+      {{ content }}
+    </div>
+    <div class="post-side-gallery">
+      {% include toolbar.html %}
+      {% for image in page.side_gallery %}
+      <img src="{{ site.recipesimages | append: image | absolute_url | escape }}"/>
+      {% endfor %}
+    </div>
+    <div class="post-bottom-gallery">
+      {% for image in page.bottom_gallery %}
+      <img src="{{ site.recipesimages | append: image | absolute_url | escape }}"/>
+      {% endfor %}
+      <div class="post-outcome">
+        {{ page.outcome }}
+      </div>
+      <img class="desktop-bottom-image" src="{{ site.recipesimages | append: page.cover_image | absolute_url | escape }}"/>
+    </div>
+    <div class="section-related-posts">
+      <div class="section-related-posts-title">You might also enjoy</div>
+      <div class="related-posts-container">
+        {% for card in site.related_posts limit: 3 %}
+          {% include card-recipe.html %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,18 @@
+
+  <div class="card-recipe">
+  <a href= "{{ card.url }}" >
+    <div class="card-image-container">
+      <img class="card-image" src= "{{ site.recipesimages | append: card.cover_image | absolute_url }}" />
+    </div>
+    <div class="card-infos">
+      <div class="card-title"> {{ card.title }} </div>
+      <div class="card-tagline"> {{ card.tagline }} </div>
+      <div class="card-cooking-time"> {{ card.cooking_time }} </div>
+      <div class="card-tags">
+      {% for tag in card.tags %}
+        <div class="card-tag"> {{ tag }} </div>
+      {% endfor %}
+      </div>
+    </div>
+  </a>
+</div>

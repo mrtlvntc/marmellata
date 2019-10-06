@@ -1,0 +1,248 @@
+html, body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+//links
+a, a:active, a:link, a:visited {
+  text-decoration: none;
+  color: $text-color;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+// vertical rhythm
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 3;
+}
+
+.header {
+  font-family: "Bagnard" !important;
+  padding: 50px 0 0px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8em;
+  vertical-align: middle;
+}
+
+nav {
+  font-size: 0.8em;
+  text-transform: capitalize;
+  max-width: $content;
+  text-align: center;
+  margin: 18px auto;
+}
+
+nav a {
+  padding: 0 10px;
+}
+
+nav a:hover {
+  color: $accent-color !important;
+  text-decoration: none !important;
+}
+
+.main-container {
+  max-width: $content;
+  margin: 0 auto;
+  min-height: 1000px;
+}
+
+.page-content {
+  padding-top: 40px;
+  max-width: $content-page;
+  margin: auto auto;
+}
+
+.section-recipes-big-squares, .section-recipes-small-squares {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.author {
+  padding: 20px 20px 5px 20px;
+  background-color: $grey-background;
+  text-align: center;
+  img {
+    width:130px;
+    border: 3px solid rgba(235, 148, 134, 0.40);
+    margin: auto auto 20px auto;
+    border-radius: 50%;
+  }
+   p {
+     text-align: left;
+   }
+}
+
+// cards big squares
+.card-recipe {
+  margin: 30px 15px 10px 15px;
+  max-width: 450px;
+}
+
+.card-image-container {
+  background-color: rgba(235, 148, 134, 0.16);
+}
+
+.card-image {
+  height: 450px;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card-recipe:hover {
+
+  .card-title {
+    color: $accent-color;
+  }
+
+  .card-image {
+    opacity: 0.5;
+    -moz-transition: opacity 0.6s ease;
+    -o-transition: opacity 0.6s ease;
+    -webkit-transition: opacity 0.6s ease;
+    transition: opacity 0.6s ease;
+  }
+}
+
+.card-infos {
+  display: inline-block;
+}
+
+.card-title {
+  padding: 20px 0 0 0;
+  font-family: "Bagnard";
+  font-size: 1.15em;
+  line-height: 1.3em;
+  font-weight: $font-weight-semibold;
+}
+
+.card-tagline {
+  padding-top: 4px;
+  line-height: 1.3em;
+  font-size: 0.85em;
+}
+
+.card-cooking-time {
+  font-size: 0.7em;
+}
+
+.card-tags {
+  padding: 2px 0 0 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-tag {
+  border-radius: 2px;
+  padding: 2px 5px 0 5px;
+  margin: 0 8px 0 0;
+  border: 1px solid $text-color;
+  font-size: 0.55em;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  line-height: 1.5em;
+}
+
+// cards small squares
+.section-recipes-small-squares {
+  margin: 40px 0;
+
+  .card-recipe {
+    margin: 10px 15px 10px 15px;
+    max-width: 290px;
+  }
+
+  .card-image {
+    height: 290px;
+  }
+
+  .card-title {
+    font-size: 0.9em;
+  }
+}
+
+// instagram feed
+.instagram-feed-container {
+  width: $content - 30px;
+}
+
+.instagram-feed-title {
+  margin: auto;
+  padding: 60px 0 40px 0;
+  color: $text-color;
+  font-family: "Bagnard";
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.instagram-element {
+  background-color: #efefef;
+  height:154px !important;
+  margin: 0.5px;
+
+  img {
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+}
+
+.arrow {
+  color: $text-color;
+  cursor: pointer;
+  background: white;
+  font-size: 25px;
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.arrow-prev {
+  @extend .arrow;
+  left: -30px;
+}
+
+.arrow-next {
+  @extend .arrow;
+  right: -30px;
+}
+
+// footer
+footer {
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  margin: 60px auto;
+}
+
+.social-icon {
+  margin: 0px 12px;
+}
+
+.social {
+  margin: 10px;
+  font-weight: $font-weight-light;
+  font-size: 1.1em !important;
+}
+
+.copyright {
+  font-size: 0.7em;
+}

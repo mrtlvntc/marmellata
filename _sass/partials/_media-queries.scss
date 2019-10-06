@@ -1,0 +1,70 @@
+/*----------------------------------
+MEDIA QUERIES
+-----------------------------------*/
+
+
+@media only screen and (max-width : $tablet) {
+
+	.main-container {
+		width: 100%;
+	}
+
+	.instagram-feed-container {
+		display: none;
+	}
+
+	.card-recipe {
+		margin: 20px 10px;
+	}
+
+	.post-text {
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	.mobile-top-image {
+		display: block;
+	}
+
+	.post-side-gallery, .post-bottom-gallery {
+		width: 100%;
+		padding: 0 10px;
+	}
+
+	.page-content {
+		padding: 25px 10px 0 10px;
+	}
+
+	.desktop-bottom-image {
+		display: none;
+	}
+
+	// cards small squares
+	.section-recipes-small-squares {
+		margin: 0;
+
+		.card-recipe {
+			margin: 20px 10px;
+			max-width: 450px;
+		}
+
+		.card-image {
+			height: 450px;
+		}
+
+		.card-title {
+			font-size: 1.15em;
+		}
+	}
+
+	blockquote {
+		font-size: 0.9em;
+		margin: 40px 0 0 0;
+	}
+
+	.toolbar {
+		text-align: center;
+		margin: 20px auto 30px auto;
+	}
+
+}

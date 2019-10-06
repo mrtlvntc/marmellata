@@ -1,0 +1,9 @@
+<div class="section-summary">{{ include.section }}</div>
+{% for element in site.categories["recipe"] %}
+  {% if element.subcategory == include.subcategory %}
+  <div class="summary-element">
+    <div class="summary-element-title"><a href="{{ element.url }}"> {{ element.title }} </a></div>
+    <div class="summary-element-tagline">{{ element.tagline }}</div>
+  </div>
+  {% endif %}
+{% endfor %}

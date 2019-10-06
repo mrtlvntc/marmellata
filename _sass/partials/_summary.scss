@@ -1,0 +1,25 @@
+
+.section-summary {
+  margin: 40px auto 10px auto;
+  font-family: "Bagnard", sans-serif;
+  font-size: 1.1em;
+  font-weight: $font-weight-semibold;
+}
+
+.summary-element {
+  padding: 5px 0 5px 10px;
+}
+
+.summary-element-title {
+  text-decoration: underline;
+  color: $accent-color;
+}
+
+.summary-element-title a:hover {
+  color: $accent-color;
+}
+
+.summary-element-tagline {
+  line-height: 1.5em;
+  font-size: 0.85em;
+}

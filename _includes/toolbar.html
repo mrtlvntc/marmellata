@@ -1,0 +1,5 @@
+<div class='toolbar'>
+		<div class="toolbar-element"> <a href="https://facebook.com/sharer.php?u={{ page.url | absolute_url}}" rel="nofollow" target="_blank" title="Share on Facebook"><i class='ion-social-facebook-outline'></i></a></div>
+		<div class="toolbar-element"> <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><i class='ion-social-twitter-outline'></i></a></div>
+		<div class="toolbar-element"><a href="mailto:?subject={{ site.title }}: {{ page.title }}&body={{ site.title }}: {{ page.title }}%0D%0A{{ page.description }}%0D%0A{{ page.url | absolute_url }}"> <i class='ion-ios-email-outline'></i> </a></div>
+</div>
