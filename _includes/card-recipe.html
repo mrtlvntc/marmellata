@@ -2,7 +2,7 @@
   <div class="card-recipe">
   <a href= "{{ card.url }}" >
     <div class="card-image-container">
-      <img class="card-image" src= "{{ site.recipesimages | append: card.cover_image | absolute_url }}" />
+      <img class="card-image" src="{{ site.recipesimages | append: card.cover_image | absolute_url }}" alt="{{ card.title }}" />
     </div>
     <div class="card-infos">
       <div class="card-title"> {{ card.title }} </div>

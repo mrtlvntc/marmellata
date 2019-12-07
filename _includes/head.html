@@ -21,11 +21,6 @@
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <meta name="keywords" content="{{ page.keywords | default: site.keywords | strip_html | normalize_whitespace | truncate: 160 | escape }}"/>
 
-  <!-- Google / Search Engine Tags -->
-  <meta itemprop="name" content="{{ title |  default: site.title | strip_html | escape }}">
-  <meta itemprop="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <meta itemprop="image" content="{{ image }}">
-
   <!-- Facebook Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ title | default: site.title | strip_html | escape }}">

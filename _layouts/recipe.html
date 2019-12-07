@@ -5,23 +5,23 @@ layout: default
   <div class="post-container">
     <div class="post-text">
       <div class="post-title">{{ page.title }}</div>
-      <img class="mobile-top-image" src="{{ site.recipesimages | append: page.cover_image | absolute_url | escape }}"/>
+      <img class="mobile-top-image" src="{{ site.recipesimages | append: page.cover_image | absolute_url | escape }}" alt="{{ page.title }}"/>
       {{ content }}
     </div>
     <div class="post-side-gallery">
       {% include toolbar.html %}
       {% for image in page.side_gallery %}
-      <img src="{{ site.recipesimages | append: image | absolute_url | escape }}"/>
+      <img src="{{ site.recipesimages | append: image | absolute_url | escape }}" alt="{{ site.recipesimages }}"/>
       {% endfor %}
     </div>
     <div class="post-bottom-gallery">
       {% for image in page.bottom_gallery %}
-      <img src="{{ site.recipesimages | append: image | absolute_url | escape }}"/>
+      <img src="{{ site.recipesimages | append: image | absolute_url | escape }}" alt="{{ site.recipesimages }}"/>
       {% endfor %}
       <div class="post-outcome">
         {{ page.outcome }}
       </div>
-      <img class="desktop-bottom-image" src="{{ site.recipesimages | append: page.cover_image | absolute_url | escape }}"/>
+      <img class="desktop-bottom-image" src="{{ site.recipesimages | append: page.cover_image | absolute_url | escape }}" alt="{{ site.recipesimages }}"/>
     </div>
     <div class="section-related-posts">
       <div class="section-related-posts-title">You might also enjoy</div>
